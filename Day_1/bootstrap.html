@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img style="margin-left: 90px;" src="data:image/png;base64,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" alt="Bootstrap" width="90" height="54">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://i.ebayimg.com/images/g/0Y4AAOxyW7tRhSd8/s-l1600.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>DRIVE</h5>
+              <p>Played by some cool artist lol</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.ebayimg.com/images/g/0lQAAOSwqNVhrVWg/s-l960.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Clifford</h5>
+              <p>A movie about a gigantic RED dog</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://bleedingcool.com/wp-content/uploads/2024/01/GEn1v2Ta4AA70Y6-1-1200x900.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>DUNE</h5>
+              <p>Absolutely no clue what this movie is about...</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <section class="p-3 mb-2 bg-primary text-white"></sectionclass>
+      <div style="text-align: center; margin: 50px; font-weight: bold;">
+        <h1 style="font-size: 4em;">MOVIES</h1>
+      </div>
+
+      <div class="container" style="margin-bottom: 25px;height: 500px;">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-bg-dark" style="width: 100%;">
+                    <img src="https://m.media-amazon.com/images/I/61qHVnmegzL._AC_SL1015_.jpg" class="card-img" alt="..." style="height: 100%; object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-bg-dark" style="width: 100%;">
+                    <img src="https://m.media-amazon.com/images/I/7148FQ4g1sL._AC_SL1500_.jpg" class="card-img" alt="..." style="height: 100%; object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-bg-dark" style="width: 100%;">
+                    <img src="https://m.media-amazon.com/images/I/51B5wd-OQ7L._AC_SL1000_.jpg" class="card-img" alt="..." style="height: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <div style="text-align: center; margin: 50px; font-weight: bold; ">
+            <h1 style="font-size: 4em;">TELEVISION</h1>
+        </div>
+    
+          <div class="container" style="margin-bottom: 25px; height: 500px;">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-bg-dark" style="width: 100%;">
+                        <img src="https://m.media-amazon.com/images/I/61M+tf5RmAL._AC_SL1000_.jpg" class="card-img" alt="..." style="height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-bg-dark" style="width: 100%;">
+                        <img src="https://m.media-amazon.com/images/I/71OC--Zwi2L._AC_SL1000_.jpg" class="card-img" alt="..." style="height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-bg-dark" style="width: 100%;">
+                        <img src="https://m.media-amazon.com/images/I/71VpGAc6hpL._AC_SL1000_.jpg" class="card-img" alt="..." style="height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="p-3 mb-2 bg-primary text-white" id="video" class="home-section text-center">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="embed-responsive embed-responsive-1by1">
+                        <iframe class="embed-responsive-item youtube" src="https://www.youtube.com/embed/67vbA5ZJdKQ?si=wrDoaQKbBb8mXO1Z?wmode=transparent&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&mute=1">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-5">
+            <div class="container">
+              <h2 class="text-center mb-4">About Us</h2>
+              <p class="text-center">Dreamworks is a leading entertainment company known for its animated feature films, television programs, and other entertainment products. We aim to create content that inspires and entertains audiences of all ages.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5 bg-light">
+            <div class="container">
+              <h2 class="text-center mb-4">Contact Us</h2>
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <form>
+                    <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <footer class="bg-body-tertiary text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+                <!-- Facebook -->
+                <a href="#!" class="btn btn-floating m-1" style="background-color: #3B5998;"><i class="fab fa-facebook-f"></i></a>
+                <!-- Twitter -->
+                <a href="#!" class="btn btn-floating m-1" style="background-color: #55ACEE;"><i class="fab fa-twitter"></i></a>
+                <!-- Google -->
+                <a href="#!" class="btn btn-floating m-1" style="background-color: #DD4B39;"><i class="fab fa-google"></i></a>
+                <!-- Instagram -->
+                <a href="#!" class="btn btn-floating m-1" style="background-color: #AC2BAC;"><i class="fab fa-instagram"></i></a>
+                <!-- Linkedin -->
+                <a href="#!" class="btn btn-floating m-1" style="background-color: #0082CA;"><i class="fab fa-linkedin-in"></i></a>
+                <!-- Github -->
+                <a href="#!" class="btn btn-floating m-1" style="background-color: #333333;"><i class="fab fa-github"></i></a>
+              </section>
+              <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2024 Copyright:
+              <a class="text-white" href="https://mdbootstrap.com/">Dream TEAM</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  </body>
+</html> 
